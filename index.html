@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIFA</title>
+  </head>
+  <body>
+    <header>
+    <div>
+        <h1>Labdarúgó-világbajnoki döntők (1930 - 2026)</h1>
+    </div>
+    </header>
+    <div>
+      <h2>A Labdarúgó-világbajnokságok döntőinek teljes listája 1930-tól 2026-ig</h2>
+    </div>
+    <div class="kereso">
+      <input type="text" placeholder="keresés órszág szerint..." id="cim">
+      <button onclick="handleSearch()" id="kereses">keres</button>
+      <button onclick="ClearFilter()">Szűrés törlése</button>
+    </div>
+
+    <div class="WClist"></div>
+    <div class="msg"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
