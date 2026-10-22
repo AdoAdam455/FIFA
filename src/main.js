@@ -19,7 +19,7 @@ window.showDetail=function showDetail(id){
 window.handleSearch=function handleSearch(){
     const searchedCountry=document.getElementById('cim').value
     console.log(searchedCountry);
-    const filteredCountry=worldCupList.filter(obj=>obj.winner.toLowerCase().includes(searchedCountry.toLowerCase()) ||  obj.runner_up.toLowerCase().includes(searchedCountry.toLowerCase()))
+    const filteredCountry=worldCupList.filter(obj=>obj.winner.toLowerCase()==(searchedCountry.toLowerCase()) ||  obj.runner_up.toLowerCase()==(searchedCountry.toLowerCase()))
     renderWorldCupList(filteredCountry)
     document.querySelector('.msg').textContent=searchedCountry
     const msg=filteredCountry.length==0 ? `Nincs találat! A keresett kifejezés: ${searchedCountry}!` : ''
